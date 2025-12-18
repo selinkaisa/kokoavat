@@ -6807,3 +6807,10 @@ img {
     padding-bottom: 4rem;
   }
 }
+@media (max-width: 768px) {
+
+  body {
+    padding-top: 56px; /* Bootstrap navbarin oletuskorkeus */
+  }
+
+}
