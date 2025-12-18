@@ -1,15 +1,5 @@
 @charset "UTF-8";
-/*!
-* Start Bootstrap - One Page Wonder v6.0.6 (https://startbootstrap.com/theme/one-page-wonder)
-* Copyright 2013-2023 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-one-page-wonder/blob/master/LICENSE)
-*/
-/*!
- * Bootstrap  v5.2.3 (https://getbootstrap.com/)
- * Copyright 2011-2022 The Bootstrap Authors
- * Copyright 2011-2022 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- */
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -10899,11 +10889,49 @@ header.masthead .masthead-content .masthead-subheading {
   }
 }
 
-/* Mobiilinäkymä, voit halutessasi eri kuva */
 @media (max-width: 991px) {
   header.masthead {
     background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
                 url('../img5.jpg') no-repeat center center;
     background-size: cover;
+  }
+}
+/* Mobiilinäkymän korjaukset */
+@media (max-width: 768px) {
+
+  header.masthead {
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+    background-position: center;
+  }
+
+  header.masthead .masthead-content {
+    text-align: center;
+    padding: 0 1rem;
+  }
+
+  header.masthead .masthead-content .masthead-heading {
+    font-size: 2.2rem;
+    line-height: 1.2;
+  }
+
+  header.masthead .masthead-content .masthead-subheading {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  header.masthead .btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+  }
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+@media (max-width: 768px) {
+  header.masthead {
+    padding-top: 6rem;
+    padding-bottom: 4rem;
   }
 }
